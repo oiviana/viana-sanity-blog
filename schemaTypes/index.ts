@@ -1,2 +1,2 @@
-import { blogPost } from './schemas/blogPost'
+import { blogPost } from '../schemas/blogPost'
 export const schemaTypes = [blogPost]
