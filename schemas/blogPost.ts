@@ -33,6 +33,11 @@ export const blogPost = defineType({
       validation: (Rule) => Rule.required(),
     }),
     defineField({
+      name: 'updatedPostDate',
+      title: 'Data de Atualização do Post',
+      type: 'datetime',
+    }),
+    defineField({
       name: 'postCategory',
       title: 'Categoria de post',
       type: 'string',
@@ -74,6 +79,12 @@ export const blogPost = defineType({
       of: [
         {
           type: 'block',
+          styles: [
+            {title: 'Texto', value: 'normal'},
+            {title: 'H1', value: 'h1'},
+            {title: 'H2', value: 'h2'},
+            {title: 'H3', value: 'h3'},
+          ],
         },
         {
           type: 'image',
