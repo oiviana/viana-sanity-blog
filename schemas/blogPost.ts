@@ -92,6 +92,9 @@ export const blogPost = defineType({
           options: {hotspot: true},
         },
         {
+          type: 'postTable',
+        },
+        {
           type: 'code',
           title: 'Código',
           options: {
