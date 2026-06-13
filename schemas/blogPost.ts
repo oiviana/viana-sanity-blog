@@ -90,6 +90,19 @@ export const blogPost = defineType({
         {
           type: 'image',
           options: {hotspot: true},
+          fields: [
+            defineField({
+              name: 'alt',
+              title: 'Texto alternativo',
+              type: 'string',
+              validation: (Rule) => Rule.required(),
+            }),
+            defineField({
+              name: 'caption',
+              title: 'Legenda / credito',
+              type: 'string',
+            }),
+          ],
         },
         {
           type: 'postTable',
